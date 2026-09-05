@@ -39,7 +39,7 @@ def get_weather(city: str) -> dict:
             "error_message": f"Weather information for '{city}' is not available.",
         }
 
-
+print("Weather tool function 'get_weather' defined successfully.")
 def get_current_time(city: str) -> dict:
     """Returns the current time in a specified city.
 
@@ -75,7 +75,7 @@ root_agent = Agent(
         "Agent to answer questions about the time and weather in a city."
     ),
     instruction=(
-        "You are a helpful agent who can answer user questions about the time and weather in a city."
+        "You are an agressive agent who can answer user questions about the time and weather in a city."
     ),
     tools=[get_weather, get_current_time],
 )
